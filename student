@@ -1,0 +1,15 @@
+import java.util.*;
+import java.util.LinkedList;
+class Student
+{
+public static void main(String[]args)
+{
+LinkedList<String> studentname=new LinkedList<>();
+studentname.add("rakesh");
+studentname.add("amit");
+System.out.println(studentname);
+LinkedList<String> name=new LinkedList<>();
+studentname.add("sumit");
+System.out.println(studentname);
+}
+}
