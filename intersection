@@ -1,0 +1,30 @@
+import java.util.*;
+import java.util.LinkedList;
+class Intersection 
+{
+	public static void main(String[] args) 
+	{
+		
+		
+		LinkedList<Integer> list=new LinkedList<>();
+		list.add(10);
+		list.add(20);
+		list.add(30);
+		list.add(40);
+		System.out.println(list);
+		LinkedList<Integer> newlist=new LinkedList<>();
+		newlist.add(100);
+		newlist.add(78);
+		newlist.add(45);
+		list.addAll(newlist);
+		System.out.println(list);
+		LinkedList<Integer> newlist1=new LinkedList<>();
+		newlist1.add(1000);
+		newlist1.add(780);
+		newlist1.add(450);
+		list.addAll(newlist);
+		newlist.addAll(newlist1);
+		System.out.println(list);
+		
+	}
+}
