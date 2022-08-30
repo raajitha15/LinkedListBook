@@ -1,0 +1,22 @@
+import java.util.*;
+import java.util.LinkedList;
+class LearnLinkedList2
+{
+public static void main(String[]args)
+{
+LinkedList<Integer> list=new LinkedList<>();
+list.add(1);
+list.add(2);
+list.add(3);
+System.out.println(list);
+list.add(4);
+System.out.println(list);
+list.add(1, 50);
+System.out.println(list);
+LinkedList<Integer> newlist=new LinkedList<>();
+newlist.add(150);
+newlist.add(78);
+list.addAll(newlist);
+System.out.println(list);
+}
+}
