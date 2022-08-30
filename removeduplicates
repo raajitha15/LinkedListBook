@@ -1,0 +1,23 @@
+import java.util.*;
+import java.util.LinkedList;
+import java.util.LinkedHashSet;
+import java.util.Set;
+class RemoveDuplicates 
+{
+	public static void main(String[] args) 
+	{
+		LinkedList<Integer> list=new LinkedList<>();
+		list.add(1);
+		list.add(2);
+		list.add(1);
+		list.add(2);
+		list.add(3);
+		list.add(4);
+		System.out.println("elements present in the list are: "+list);
+		Set<Integer> set=new LinkedHashSet<>();
+		set.addAll(list);
+		list.clear();
+		list.addAll(set);
+		System.out.println("list after modification are: "+list);
+	}
+}
